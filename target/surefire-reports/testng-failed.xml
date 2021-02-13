@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Automation Testing]">
+  <listeners>
+    <listener class-name="com.qa.utilities.Reporting"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="Amazon Functional testing(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.qa.testsScripts.TC_AmazonHomePage_002">
+        <methods>
+          <include name="setUp"/>
+          <include name="loadPages"/>
+          <include name="tearDown"/>
+          <include name="getFooterlinks"/>
+        </methods>
+      </class> <!-- com.qa.testsScripts.TC_AmazonHomePage_002 -->
+      <class name="com.qa.testsScripts.TC_AmazonSearchItemDDT_003">
+        <methods>
+          <include name="searchItemDDT" invocation-numbers="1"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="loadPages"/>
+        </methods>
+      </class> <!-- com.qa.testsScripts.TC_AmazonSearchItemDDT_003 -->
+    </classes>
+  </test> <!-- Amazon Functional testing(failed) -->
+</suite> <!-- Failed suite [Automation Testing] -->

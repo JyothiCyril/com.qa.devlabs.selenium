@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Automation_Testing" class="navigator-link">
+              <span class="suite-name border-failed">Automation Testing</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Automation_Testing" class="navigator-link ">
+                    <span>D:\SeleniumTraining\com.qa.devlabs.selenium\src\test\java\com\qa\utilities\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Automation_Testing" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Automation_Testing" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Automation_Testing" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Automation_Testing" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Automation_Testing" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Automation_Testing" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Automation_Testing" class="hide-methods failed suite-Automation_Testing"> (hide)</a> <!-- hide-methods failed suite-Automation_Testing -->
+                      <a href="#" panel-name="suite-Automation_Testing" class="show-methods failed suite-Automation_Testing"> (show)</a> <!-- show-methods failed suite-Automation_Testing -->
+                    </span>
+                    <div class="method-list-content failed suite-Automation_Testing">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Testing" title="com.qa.testsScripts.TC_AmazonSearchItemDDT_003" class="method navigator-link" hash-for-method="searchItemDDT(Furniture, Wooden Tables)">searchItemDDT(Furniture, Wooden Tables)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Automation_Testing -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Automation_Testing" class="hide-methods passed suite-Automation_Testing"> (hide)</a> <!-- hide-methods passed suite-Automation_Testing -->
+                      <a href="#" panel-name="suite-Automation_Testing" class="show-methods passed suite-Automation_Testing"> (show)</a> <!-- show-methods passed suite-Automation_Testing -->
+                    </span>
+                    <div class="method-list-content passed suite-Automation_Testing">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Testing" title="com.qa.testsScripts.TC_AmazonSearchItemDDT_003" class="method navigator-link" hash-for-method="searchItemDDT(Books, Da vinci code)">searchItemDDT(Books, Da vinci code)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Testing" title="com.qa.testsScripts.TC_AmazonSearchItemDDT_003" class="method navigator-link" hash-for-method="searchItemDDT(Electronics, Mobile phones)">searchItemDDT(Electronics, Mobile phones)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Automation_Testing -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Automation_Testing" class="panel Automation_Testing">
+          <div class="suite-Automation_Testing-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.qa.testsScripts.TC_AmazonSearchItemDDT_003</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchItemDDT(Furniture, Wooden Tables)">
+                  </a> <!-- searchItemDDT(Furniture, Wooden Tables) -->
+                  <span class="method-name">searchItemDDT</span>
+                  <span class="parameters">(Furniture, Wooden Tables)</span>
+                  <div class="stack-trace">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.qa.testsScripts.TC_AmazonSearchItemDDT_003.searchItemDDT(TC_AmazonSearchItemDDT_003.java:47)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Automation_Testing-class-failed -->
+          <div class="suite-Automation_Testing-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.testsScripts.TC_AmazonSearchItemDDT_003</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchItemDDT(Books, Da vinci code)">
+                  </a> <!-- searchItemDDT(Books, Da vinci code) -->
+                  <span class="method-name">searchItemDDT</span>
+                  <span class="parameters">(Books, Da vinci code)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchItemDDT(Electronics, Mobile phones)">
+                  </a> <!-- searchItemDDT(Electronics, Mobile phones) -->
+                  <span class="method-name">searchItemDDT</span>
+                  <span class="parameters">(Electronics, Mobile phones)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Automation_Testing-class-passed -->
+        </div> <!-- panel Automation_Testing -->
+        <div panel-name="test-xml-Automation_Testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\SeleniumTraining\com.qa.devlabs.selenium\src\test\java\com\qa\utilities\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Automation Testing&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.qa.utilities.Reporting&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Amazon Functional testing&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.testsScripts.TC_AmazonSearchItemDDT_003&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Amazon Functional testing --&gt;
+&lt;/suite&gt; &lt;!-- Automation Testing --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Automation_Testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Automation Testing</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Amazon Functional testing (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Automation_Testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Automation Testing</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Automation_Testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Automation Testing</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Automation_Testing');
+function tableData_Automation_Testing() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(3);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'searchItemDDT')
+data.setCell(0, 2, 'com.qa.testsScripts.TC_AmazonSearchItemDDT_003')
+data.setCell(0, 3, 18048);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'searchItemDDT')
+data.setCell(1, 2, 'com.qa.testsScripts.TC_AmazonSearchItemDDT_003')
+data.setCell(1, 3, 17822);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'searchItemDDT')
+data.setCell(2, 2, 'com.qa.testsScripts.TC_AmazonSearchItemDDT_003')
+data.setCell(2, 3, 14660);
+window.suiteTableData['Automation_Testing']= { tableData: data, tableDiv: 'times-div-Automation_Testing'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 50 seconds</span>
+              <div id="times-div-Automation_Testing">
+              </div> <!-- times-div-Automation_Testing -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Automation_Testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Automation Testing</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">searchItemDDT(Books, Da vinci code)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">There are items displayed</span>
+                <span class="reporter-method-output">The Da Vinci Code: (Robert Langdon Book 2)</span>
+                <span class="reporter-method-output">The Da Vinci Code (Abridged Edition)</span>
+                <span class="reporter-method-output">Davinci Code</span>
+                <span class="reporter-method-output">Angels and Demons: (Robert Langdon Book 1)</span>
+                <span class="reporter-method-output">The Case-Book of Sherlock Holmes</span>
+                <span class="reporter-method-output">To Kill A Mockingbird: 50th Anniversary Edition: 60th Anniversary Edition</span>
+                <span class="reporter-method-output">Robert Langdon Series Collection 7 Books Set By Dan Brown (Angels And Demons, The Da Vinci Code, The Lost Symbol, Inferno, Origin, Digital Fortress, Deception Point)</span>
+                <span class="reporter-method-output">A Thousand Splendid Suns</span>
+                <span class="reporter-method-output">Battle for Power</span>
+                <span class="reporter-method-output">Terror on the Divine</span>
+                <span class="reporter-method-output">One Arranged Murder</span>
+                <span class="reporter-method-output">Harappa Trilogy</span>
+                <span class="reporter-method-output">The Silent Patient: The record-breaking, multimillion copy Sunday Times bestselling thriller and Richard & Judy book club pick</span>
+                <span class="reporter-method-output">The Blue Umbrella</span>
+                <span class="reporter-method-output">Enslaved</span>
+                <span class="reporter-method-output">The Secret Of The Nagas (Shiva Trilogy-2)</span>
+                <span class="reporter-method-output">And Then There Were None: The World’s Favourite Agatha Christie Book</span>
+                <span class="reporter-method-output">The Alchemist</span>
+                <span class="reporter-method-output">The Complete Novels of Sherlock Holmes</span>
+                <span class="reporter-method-output">The Last Nazi: a WW2 spy conspiracy thriller (A Joe Johnson Thriller, Book 1)</span>
+                <span class="reporter-method-output">The Krishna Key</span>
+                <span class="reporter-method-output">The Murder on the Links (Agatha Christie Facsimile Edtn)</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">searchItemDDT(Electronics, Mobile phones)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">There are items displayed</span>
+                <span class="reporter-method-output">OnePlus 8T 5G (Lunar Silver, 8GB RAM, 128GB Storage)</span>
+                <span class="reporter-method-output">LG Wing (Illusion Sky, 128 GB) (8 GB RAM)- Versatile Multi-Screen, Charger Included</span>
+                <span class="reporter-method-output">Panasonic Eluga i7 (2GB RAM, 16GB Storage, Finger Print Sensor, 4000mAh Battery) (Black)</span>
+                <span class="reporter-method-output">Redmi 9 (Sky Blue, 4GB RAM, 64GB Storage)</span>
+                <span class="reporter-method-output">Samsung Galaxy M02s (Blue,4GB RAM, 64GB Storage) | 5000 mAh | Triple Camera</span>
+                <span class="reporter-method-output">Samsung Galaxy M31 (Ocean Blue, 6GB RAM, 128GB Storage)</span>
+                <span class="reporter-method-output">Redmi 8A Dual (Sea Blue, 3GB RAM, 32GB Storage) – Dual Cameras & 5,000 mAH Battery</span>
+                <span class="reporter-method-output">Samsung Galaxy M21 (Midnight Blue, 4GB RAM, 64GB Storage)</span>
+                <span class="reporter-method-output">Samsung Galaxy M01 (Blue, 3GB RAM, 32GB Storage) with No Cost EMI/Additional Exchange Offers</span>
+                <span class="reporter-method-output">Nokia 5310 Dual SIM Feature Phone with MP3 Player, Wireless FM Radio and Rear Camera</span>
+                <span class="reporter-method-output">Nokia 105 Single SIM (Blue)</span>
+                <span class="reporter-method-output">Nokia 105 Single SIM (Black)</span>
+                <span class="reporter-method-output">Samsung Galaxy M01 Core (Blue, 1GB RAM, 16GB Storage) with No Cost EMI/Additional Exchange Offers</span>
+                <span class="reporter-method-output">Nokia 225 4G Dual SIM Feature Phone with Long Battery Life, Camera, Multiplayer Games, and Premium Finish – Black Colour</span>
+                <span class="reporter-method-output">itel A48 (Gradation Green, 2GB RAM, 32GB Storage)</span>
+                <span class="reporter-method-output">Lava Pulse Mobile Phone - with BP & Heart Rate Monitor (Gold)</span>
+                <span class="reporter-method-output">Honor 9X (Midnight Black, 4+128GB Storage) -Pop up Front Camera & 48MP Triple Rear Camera</span>
+                <span class="reporter-method-output">OPPO A5S (Black, 3GB RAM, 32GB Storage) With No Cost EMI/Additional Exchange Offers</span>
+                <span class="reporter-method-output">STRIFF Multi Angle Mobile Stand. Phone Holder for iPhone, Android, Samsung, OnePlus, Xiaomi. Portable,Foldable Cell Phone Stand.Perfect for Bed,Office, Home,Gift and Desktop (Black)</span>
+                <span class="reporter-method-output">ELV Desktop Cell Phone Stand Tablet Stand, Aluminum Stand Holder for Mobile Phone (All Size) and Tablet (Up to 10.1 inch) - Black</span>
+                <span class="reporter-method-output">Vivo Y91i (Ocean Blue, 2GB RAM, 32GB Storage) with No Cost EMI/Additional Exchange Offers</span>
+                <span class="reporter-method-output">Nokia 3310 Dual SIM Feature Phone with MP3 Player, Wireless FM Radio and Rear Camera</span>
+                <span class="reporter-method-output">Sony WI-XB400 Wireless Extra Bass in-Ear Headphones with 15 Hours Battery Life, Quick Charge, Magnetic Earbuds, Tangle Free Cord, Bluetooth Ver 5.0, Headset with Mic for Phone Calls – (Black)</span>
+                <span class="reporter-method-output">Boult Audio AirBass PowerBuds True Wireless Earbuds with Fast Charging & 155 Hours Hotal Playtime, Touch Controls, IPX7 Waterproof, Reverse Charging for Mobile Phones and Type C Port (Black)</span>
+                <span class="reporter-method-output">ELV Car Mount Adjustable Car Phone Holder Universal Long Arm, Windshield for Smartphones - Black</span>
+                <span class="reporter-method-output">Redmi 9 (Sporty Orange, 4GB RAM, 128GB Storage)</span>
+                <span class="reporter-method-output">boAt Rockerz 255 Sports in-Ear Bluetooth Neckband Earphone with Mic (Active Black)</span>
+                <span class="reporter-method-output">HUMBLE Universal 360 Degree Adjustable Mobile Phone Holder for Bicycle | Bike | Motorcycle | Ideal for Maps | Navigation | Charging - Black</span>
+                <span class="reporter-method-output">TRIO T4 Jazz Feature Mobile Phone with Dual SIM Card, Dual Camera, Powerful Battery, LED Torch, Dedicated Music Keys | Palm Friendly Grip with 1.77” QVGA Screen, Expandable Memory up to 32 GB (Black)</span>
+                <span class="reporter-method-output">TRIO T8 Boss Feature Mobile Phone with, Dual SIM Card, Powerful Battery, Stereo Sound, Bright LED Torch, Call Recorder | Palm Friendly Grip with 2.4" QVGA TFT Screen, (Ocean Blue)…</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">searchItemDDT(Furniture, Wooden Tables)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">There are no items displayed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Automation_Testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Automation_Testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.testsScripts.TC_AmazonSearchItemDDT_003</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">loadPages</span>
+                <span class="method-start">34954 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">searchItemDDT(Books, Da vinci code)</span>
+                <span class="method-start">35314 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">loadPages</span>
+                <span class="method-start">53327 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">searchItemDDT(Furniture, Wooden Tables)</span>
+                <span class="method-start">53372 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">loadPages</span>
+                <span class="method-start">71703 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">searchItemDDT(Electronics, Mobile phones)</span>
+                <span class="method-start">71708 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">86380 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

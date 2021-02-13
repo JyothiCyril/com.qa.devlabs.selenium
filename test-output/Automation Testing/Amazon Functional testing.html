@@ -1,0 +1,215 @@
+<html>
+<head>
+<title>TestNG:  Amazon Functional testing</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Amazon Functional testing</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Jan 31 13:19:24 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>89 seconds (89234 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qa.testsScripts.TC_AmazonSearchItemDDT_003.searchItemDDT()'><b>searchItemDDT</b><br>Test class: com.qa.testsScripts.TC_AmazonSearchItemDDT_003<br>Parameters: Furniture, Wooden Tables<br/>
+<a href="#Output-163160871" onClick='toggleBox("Output-163160871", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-163160871" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-163160871">
+There are no items displayed<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.qa.testsScripts.TC_AmazonSearchItemDDT_003.searchItemDDT(TC_AmazonSearchItemDDT_003.java:47)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace163160871", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace163160871'><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.qa.testsScripts.TC_AmazonSearchItemDDT_003.searchItemDDT(TC_AmazonSearchItemDDT_003.java:47)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>18</td>
+<td>com.qa.testsScripts.TC_AmazonSearchItemDDT_003@7e7be63f</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qa.testsScripts.TC_AmazonSearchItemDDT_003.searchItemDDT()'><b>searchItemDDT</b><br>Test class: com.qa.testsScripts.TC_AmazonSearchItemDDT_003<br>Parameters: Books, Da vinci code<br/>
+<a href="#Output-170082758" onClick='toggleBox("Output-170082758", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-170082758" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-170082758">
+There are items displayed<br/>
+The Da Vinci Code: (Robert Langdon Book 2)<br/>
+The Da Vinci Code (Abridged Edition)<br/>
+Davinci Code<br/>
+Angels and Demons: (Robert Langdon Book 1)<br/>
+The Case-Book of Sherlock Holmes<br/>
+To Kill A Mockingbird: 50th Anniversary Edition: 60th Anniversary Edition<br/>
+Robert Langdon Series Collection 7 Books Set By Dan Brown (Angels And Demons, The Da Vinci Code, The Lost Symbol, Inferno, Origin, Digital Fortress, Deception Point)<br/>
+A Thousand Splendid Suns<br/>
+Battle for Power<br/>
+Terror on the Divine<br/>
+One Arranged Murder<br/>
+Harappa Trilogy<br/>
+The Silent Patient: The record-breaking, multimillion copy Sunday Times bestselling thriller and Richard & Judy book club pick<br/>
+The Blue Umbrella<br/>
+Enslaved<br/>
+The Secret Of The Nagas (Shiva Trilogy-2)<br/>
+And Then There Were None: The World’s Favourite Agatha Christie Book<br/>
+The Alchemist<br/>
+The Complete Novels of Sherlock Holmes<br/>
+The Last Nazi: a WW2 spy conspiracy thriller (A Joe Johnson Thriller, Book 1)<br/>
+The Krishna Key<br/>
+The Murder on the Links (Agatha Christie Facsimile Edtn)<br/>
+</div>
+</td>
+<td></td>
+<td>17</td>
+<td>com.qa.testsScripts.TC_AmazonSearchItemDDT_003@7e7be63f</td></tr>
+<tr>
+<td title='com.qa.testsScripts.TC_AmazonSearchItemDDT_003.searchItemDDT()'><b>searchItemDDT</b><br>Test class: com.qa.testsScripts.TC_AmazonSearchItemDDT_003<br>Parameters: Electronics, Mobile phones<br/>
+<a href="#Output-1258010306" onClick='toggleBox("Output-1258010306", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1258010306" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1258010306">
+There are items displayed<br/>
+OnePlus 8T 5G (Lunar Silver, 8GB RAM, 128GB Storage)<br/>
+LG Wing (Illusion Sky, 128 GB) (8 GB RAM)- Versatile Multi-Screen, Charger Included<br/>
+Panasonic Eluga i7 (2GB RAM, 16GB Storage, Finger Print Sensor, 4000mAh Battery) (Black)<br/>
+Redmi 9 (Sky Blue, 4GB RAM, 64GB Storage)<br/>
+Samsung Galaxy M02s (Blue,4GB RAM, 64GB Storage) | 5000 mAh | Triple Camera<br/>
+Samsung Galaxy M31 (Ocean Blue, 6GB RAM, 128GB Storage)<br/>
+Redmi 8A Dual (Sea Blue, 3GB RAM, 32GB Storage) – Dual Cameras & 5,000 mAH Battery<br/>
+Samsung Galaxy M21 (Midnight Blue, 4GB RAM, 64GB Storage)<br/>
+Samsung Galaxy M01 (Blue, 3GB RAM, 32GB Storage) with No Cost EMI/Additional Exchange Offers<br/>
+Nokia 5310 Dual SIM Feature Phone with MP3 Player, Wireless FM Radio and Rear Camera<br/>
+Nokia 105 Single SIM (Blue)<br/>
+Nokia 105 Single SIM (Black)<br/>
+Samsung Galaxy M01 Core (Blue, 1GB RAM, 16GB Storage) with No Cost EMI/Additional Exchange Offers<br/>
+Nokia 225 4G Dual SIM Feature Phone with Long Battery Life, Camera, Multiplayer Games, and Premium Finish – Black Colour<br/>
+itel A48 (Gradation Green, 2GB RAM, 32GB Storage)<br/>
+Lava Pulse Mobile Phone - with BP & Heart Rate Monitor (Gold)<br/>
+Honor 9X (Midnight Black, 4+128GB Storage) -Pop up Front Camera & 48MP Triple Rear Camera<br/>
+OPPO A5S (Black, 3GB RAM, 32GB Storage) With No Cost EMI/Additional Exchange Offers<br/>
+STRIFF Multi Angle Mobile Stand. Phone Holder for iPhone, Android, Samsung, OnePlus, Xiaomi. Portable,Foldable Cell Phone Stand.Perfect for Bed,Office, Home,Gift and Desktop (Black)<br/>
+ELV Desktop Cell Phone Stand Tablet Stand, Aluminum Stand Holder for Mobile Phone (All Size) and Tablet (Up to 10.1 inch) - Black<br/>
+Vivo Y91i (Ocean Blue, 2GB RAM, 32GB Storage) with No Cost EMI/Additional Exchange Offers<br/>
+Nokia 3310 Dual SIM Feature Phone with MP3 Player, Wireless FM Radio and Rear Camera<br/>
+Sony WI-XB400 Wireless Extra Bass in-Ear Headphones with 15 Hours Battery Life, Quick Charge, Magnetic Earbuds, Tangle Free Cord, Bluetooth Ver 5.0, Headset with Mic for Phone Calls – (Black)<br/>
+Boult Audio AirBass PowerBuds True Wireless Earbuds with Fast Charging & 155 Hours Hotal Playtime, Touch Controls, IPX7 Waterproof, Reverse Charging for Mobile Phones and Type C Port (Black)<br/>
+ELV Car Mount Adjustable Car Phone Holder Universal Long Arm, Windshield for Smartphones - Black<br/>
+Redmi 9 (Sporty Orange, 4GB RAM, 128GB Storage)<br/>
+boAt Rockerz 255 Sports in-Ear Bluetooth Neckband Earphone with Mic (Active Black)<br/>
+HUMBLE Universal 360 Degree Adjustable Mobile Phone Holder for Bicycle | Bike | Motorcycle | Ideal for Maps | Navigation | Charging - Black<br/>
+TRIO T4 Jazz Feature Mobile Phone with Dual SIM Card, Dual Camera, Powerful Battery, LED Torch, Dedicated Music Keys | Palm Friendly Grip with 1.77” QVGA Screen, Expandable Memory up to 32 GB (Black)<br/>
+TRIO T8 Boss Feature Mobile Phone with, Dual SIM Card, Powerful Battery, Stereo Sound, Bright LED Torch, Call Recorder | Palm Friendly Grip with 2.4" QVGA TFT Screen, (Ocean Blue)…<br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
+<td>com.qa.testsScripts.TC_AmazonSearchItemDDT_003@7e7be63f</td></tr>
+</table><p>
+</body>
+</html>

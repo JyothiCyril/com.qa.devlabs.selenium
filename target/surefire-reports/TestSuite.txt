@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 230.541 s <<< FAILURE! - in TestSuite
+searchItemDDT(com.qa.testsScripts.TC_AmazonSearchItemDDT_003)  Time elapsed: 26.382 s  <<< FAILURE!
+java.lang.AssertionError
+	at com.qa.testsScripts.TC_AmazonSearchItemDDT_003.searchItemDDT(TC_AmazonSearchItemDDT_003.java:47)
+
+getFooterlinks(com.qa.testsScripts.TC_AmazonHomePage_002)  Time elapsed: 8.506 s  <<< FAILURE!
+java.lang.AssertionError
+	at com.qa.testsScripts.TC_AmazonHomePage_002.getFooterlinks(TC_AmazonHomePage_002.java:38)
+

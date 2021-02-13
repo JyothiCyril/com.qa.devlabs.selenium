@@ -1,0 +1,8 @@
+com\qa\testsScripts\TestBase.class
+com\qa\pages\AmazonPages.class
+com\qa\testsScripts\TC_AmazonSearchItemDDT_003.class
+com\qa\utilities\excelUtility.class
+com\qa\testsScripts\TC_AmazonSearchItem_001.class
+com\qa\utilities\Reporting.class
+com\qa\testsScripts\TC_AmazonHomePage_002.class
+com\qa\testsScripts\TC_AmazonCreateAccount_004.class
